@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;800&family=Karla:wght@800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1c1c1c;
+}
+
+.main {
+  margin-top: 100px;
+  width: 500px;
+  height: 500px;
+  background-color: #1f2937;
+  border-radius: 10px;
+  padding: 55px ;
+}
+
+h1{
+font-family: 'Karla';
+font-style: normal;
+font-weight: 800;
+font-size: 40px;
+line-height: 25px;
+padding: 3px;
+color: #FFFFFF;
+
+}
+
+.p2 {
+  color: #4adf86;
+  font-family: "Inter", sans-serif;
+  font-size: 40px;
+  line-height: 40px;
+  font-weight: 800;
+  padding: 3px;
+  margin-top: 5px;
+  
+}
+
+.sub-text {
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+color: #D5D4D8;
+ margin-top: 20px;
+  margin-bottom: 15px;
+}
+
+#gen {
+ font-family: "Inter", sans-serif;
+  font-weight: 500;
+  padding: 10px;
+  background-color: #10b981;
+  margin-bottom: 25px;
+  cursor: pointer;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  margin-top: 30px;
+ background: #10B981;
+ box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+
+}
+
+.inputs{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 45px;
+}
+
+.enter {
+    display: flex;
+     justify-content: center;
+    align-items: center;
+}
+
+#text{
+    font-family: 'Inter';
+    font-style: normal;
+     font-weight: 700;
+    color: #D5D4D8;
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+
+#len {
+    caret-color: #D5D4D8;
+    justify-content: center;
+     background-color: #273549;
+    width:45px;
+    color :aliceblue;
+    border-radius: 3px;
+}
+
+.pass{
+    width: 180px;
+  height: 39px;
+  background-color: #273549;
+  border-radius: 6px;
+  color: #55f991;
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+hr{
+width: 446px;
+height: 0px;
+left: 52px;
+top: 361px;
+
+border: 1px solid #2F3E53;
+
+}
