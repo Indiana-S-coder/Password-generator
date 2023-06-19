@@ -5,24 +5,37 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Password genrator</title>
-    <link rel="stylesheet" href="index.css">
+    <!--<link rel="stylesheet" href="index.css">-->
 </head>
 <body>
      <div class="main">
         <h1 id="head1">Generate a</h1>
-        <span class="p2">random password</span>
-        <p class="sub-text">Never use an insecure password again.</p>
+        <span class="p2">password</span><br><br>
+        <p class="sub-text">Never use an insecure password again.</p><br>
         <div class="enter">
             <p id="text">Enter the length of password you want to generate </p>
-            <input  type="number" min="3" id="len"/>
+            <input  type="number" min="3" max="100" id="len"/>
         </div>
-        <button id="gen" onclick="generate()">Generate passwords</button>
+        <div class="selections">
+            <label for="uppercase">Include Uppercase characters:</label>
+            <input type="checkbox" id="uppercase" name="uppercase" checked><br>
+            <label for="lowercase">Include Lowercase characters:</label>
+            <input type="checkbox" id="lowercase" name="lowercase" checked><br>
+            <label for="symbols">Include Symbols:</label>
+            <input type="checkbox" id="symbols" name="symbols" checked><br>
+            <label for="numbers">Include Numbers:</label>
+            <input type="checkbox" id="numbers" name="numbers" checked><br>
+            <label for="similar">Exclude Similar Characters:</label>
+            <input type="checkbox" id="similar" name="similar" checked><br>
+        </div>
+        <button id="gen" onclick="generate()">Generate password</button>
          <hr/>
          <div class="inputs">
-          <button class="pass" id="pass1"></button>
-          <button class="pass" id="pass2"></button>
+          <textarea class="pass" id="password"></textarea><br>
+          <label for="mnemonic">Remember the password:</label>
+          <p id="mnemonic"></p>
          </div>
         </div>
-        <script src="index.js"></script>
+    <script src="index.js"></script>
 </body>
 </html>
